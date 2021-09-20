@@ -46,7 +46,8 @@ h2 {
 }
 
 /* Hide the link that should open and close the topnav on small screens */
-.topnav .icon {
+
+.topnav .menu-btn {
     display: none;
 }
 
@@ -115,7 +116,8 @@ h2 {
     .dropdown .dropbtn {
         display: none;
     }
-    .topnav a.icon {
+
+    .topnav a.menu-btn {
         float: right;
         display: block;
     }
@@ -129,11 +131,12 @@ h2 {
         flex-direction: column;
         align-items: stretch;
     }
-    .topnav.responsive a.icon {
-        /*display: none;*/
+
+    .topnav.responsive a.menu-btn {
         position: absolute;
         right: 0;
         top: 0;
+        transition: all 0.5s ease-out;
     }
     .topnav.responsive img
      {
@@ -159,4 +162,33 @@ h2 {
         padding-left: 30px;
         text-align: left;
     }
+}
+
+
+/* Styling the hamburger lines */
+.menu-btn .btn-line {
+    width: 28px;
+    height: 3px;
+    margin: 0 0 5px 0;
+    background: white;
+    transition: all 0.5s ease-out;
+}
+
+/* Adding transform to the X */
+.menu-btn.close {
+    transform: rotate(180deg);
+}
+
+/* Styling the three lines
+    to make it an X */
+.menu-btn.close .btn-line:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+}
+
+.menu-btn.close .btn-line:nth-child(2) {
+    opacity: 0;
+}
+
+.menu-btn.close .btn-line:nth-child(3) {
+    transform: rotate(-45deg) translate(7px, -6px);
 }
