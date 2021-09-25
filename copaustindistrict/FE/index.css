@@ -1,4 +1,10 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
 body {
+    /*box-sizing: border-box;*/
     padding: 0;
     margin: 0;
     font-family: 'Open Sans', sans-serif;
@@ -192,7 +198,8 @@ h2 {
 .menu-btn.close .btn-line:nth-child(3) {
     transform: rotate(-45deg) translate(7px, -6px);
 }
-/**/
+/*Slideshow*/
+
 [data-component="slideshow"] .slide {
     display: none;
     width: 100%;
@@ -201,6 +208,105 @@ h2 {
 [data-component="slideshow"] .slide.active {
     display: block;
 }
+/*Welcome-Announcements*/
+#announcements {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 46vh;
+    background-color: #fff;
+
+}
+#announcements h2 {
+    text-align: center;
+    color: #000;
+    font-size: 37px;
+}
+
+/*Move w Pastor*/
+/*#pastor-message {*/
+/*    box-sizing: border-box;*/
+/*    display: flex;*/
+/*    width: 100%;*/
+/*    height: 46vh;*/
+/*    padding: 0;*/
+/*    margin: 0;*/
+/*    background-image: url('images/mwtpastor.png');*/
+/*    background-repeat: no-repeat;*/
+/*    background-position: center center;*/
+/*    background-size: cover;*/
+/*    overflow: hidden;*/
+/*    position: relative;*/
+/*    text-align: center;*/
+/*    color: white;*/
+/*}*/
+
+.pastor-text {
+    position: absolute;
+    top: 50%;
+    left: 70%;
+    transform: translate(-50%, -50%);
+    width: 50vw;
+}
+
+.pastor-text h2 {
+    text-align: center;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1;
+}
+
+.pastor-text p {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1;
+    padding: 15px;
+}
+
+.pastor-text button {
+    padding: 15px 25px;
+    border-style: none;
+    background: #005368;
+    color: white;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 600px){
+    #pastor-message {
+        box-sizing: border-box;
+        display: flex;
+        width: 100%;
+        height: 46vh;
+        padding: 0;
+        margin: 0;
+        background-image: url('images/mwtpastor.png');
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+        overflow: hidden;
+        position: relative;
+        text-align: center;
+        color: white;
+    }
+    .pastor-text {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 70vw;
+    }
+    .pastor-text h2 {
+        font-size: 28px;
+    }
+    .pastor-text p {
+        font-size: 18px;
+
+    }
+
+}
+
 
 /*Footer Styles*/
 
@@ -284,6 +390,7 @@ h3 {
     position: relative;
     top: 50px;
     padding: 15px 25px;
+    margin-bottom: 30px;
     border-style: none;
     background: #072f4c;
     color: white;
@@ -307,27 +414,32 @@ h3 {
         padding: 50px;
         margin: 0px;
     }
+    .about-us {
+        width: 200px;
+    }
 
-    /*footer .bottom p {*/
-    /*    position: relative;*/
-    /*    top: 35px;*/
-    /*    padding: 30px;*/
-    /*    left: 0px;*/
-    /*}*/
-    /*.bottom li {*/
-    /*    position: relative;*/
-    /*    left: 15px;*/
-    /*}*/
+    #pastor-message {
+        box-sizing: border-box;
+        display: flex;
+        width: 100%;
+        height: 46vh;
+        padding: 0;
+        margin: 0;
+        background-image: url('images/mwtpastor.png');
+        background-repeat: no-repeat;
+        /*background-position: center center;*/
+        background-size: cover;
+        overflow: hidden;
+        position: relative;
+        text-align: center;
+        color: white;
+    }
+    .pastor-text h2 {
 
-    /*.fa-caret-right {*/
-    /*    font-size: 22px;*/
-    /*}*/
+        font-size: 30px;
 
-    /*.fa-chevron-up {*/
-    /*    position: relative;*/
-    /*    bottom: 90px;*/
-    /*    right: 35px;*/
-    /*}*/
+    }
+
 }
 
 
@@ -340,6 +452,25 @@ h3 {
         margin: 0px;
         padding: 50px;
     }
+    #pastor-message {
+        box-sizing: border-box;
+        display: flex;
+        width: 100%;
+        height: 46vh;
+        padding: 0;
+        margin: 0;
+        background-image: url('images/mwtpastor.png');
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+        overflow: hidden;
+        position: relative;
+        text-align: center;
+        color: white;
+    }
+    /*#pastor-message {*/
+    /*    background-position: center center;*/
+    /*}*/
 
     /*.bottom p {*/
     /*    position: relative;*/
