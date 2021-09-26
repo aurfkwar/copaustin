@@ -4,14 +4,14 @@
     margin: 0;
 }
 body {
-    /*box-sizing: border-box;*/
     padding: 0;
     margin: 0;
     font-family: 'Open Sans', sans-serif;
 }
 
 
-/* Add a black background color to the top navigation */
+/* Navigation */
+
 .topnav {
     background-color: #005368;
     overflow: hidden;
@@ -34,6 +34,7 @@ h2 {
 
 
 /* Style the links inside the navigation bar */
+
 .topnav a {
     float: left;
     display: block;
@@ -47,7 +48,6 @@ h2 {
 
 /* Add an active class to highlight the current page */
 .active {
-    /*background-color: #04AA6D;*/
     color: white;
 }
 
@@ -212,36 +212,38 @@ h2 {
 #announcements {
     box-sizing: border-box;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 46vh;
+    /*height: 46vh;*/
     background-color: #fff;
 
 }
 #announcements h2 {
+    padding: 15px 0;
     text-align: center;
     color: #000;
-    font-size: 37px;
+    font-size: 36px;
+}
+/*Newsfeed*/
+#announcements p {
+    padding: 15px 0;
+    width: 100%;
+    font-size: 28px;
+    animation: marquee 30s linear infinite;
+    white-space: nowrap;
+}
+@keyframes marquee {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
 }
 
 /*Move w Pastor*/
-/*#pastor-message {*/
-/*    box-sizing: border-box;*/
-/*    display: flex;*/
-/*    width: 100%;*/
-/*    height: 46vh;*/
-/*    padding: 0;*/
-/*    margin: 0;*/
-/*    background-image: url('images/mwtpastor.png');*/
-/*    background-repeat: no-repeat;*/
-/*    background-position: center center;*/
-/*    background-size: cover;*/
-/*    overflow: hidden;*/
-/*    position: relative;*/
-/*    text-align: center;*/
-/*    color: white;*/
-/*}*/
 
 .pastor-text {
     position: absolute;
@@ -298,10 +300,10 @@ h2 {
         width: 70vw;
     }
     .pastor-text h2 {
-        font-size: 28px;
+        font-size: 20px;
     }
     .pastor-text p {
-        font-size: 18px;
+        font-size: 16px;
 
     }
 
@@ -427,7 +429,6 @@ h3 {
         margin: 0;
         background-image: url('images/mwtpastor.png');
         background-repeat: no-repeat;
-        /*background-position: center center;*/
         background-size: cover;
         overflow: hidden;
         position: relative;
@@ -435,9 +436,7 @@ h3 {
         color: white;
     }
     .pastor-text h2 {
-
-        font-size: 30px;
-
+        font-size: 26px;
     }
 
 }
