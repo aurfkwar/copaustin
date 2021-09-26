@@ -10,7 +10,12 @@ body {
 }
 
 
-/* Add a black background color to the top navigation */
+/* Navigation */
+header {
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+}
 .topnav {
     background-color: #005368;
     overflow: hidden;
