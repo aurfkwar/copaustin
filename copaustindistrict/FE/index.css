@@ -38,6 +38,11 @@ h2 {
 
 
 /* Style the links inside the navigation bar */
+header {
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+}
 .topnav a {
     float: left;
     display: block;
