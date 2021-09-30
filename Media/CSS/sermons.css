@@ -1,0 +1,57 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+main{
+    font-family: "Open sans";
+    text-align: center;
+    background-image: url(http://www.new.copusa.org/wp-content/uploads/2018/10/home_yoga_bg_pattern.jpg);
+}
+
+a{
+    text-decoration: none;
+    color: #000000;
+}
+
+p{
+    font-size: 14px;
+    opacity: .87;
+    margin: 8px 0;
+}
+
+
+.card hr{
+    align-content: center;
+    width: 95%;
+    margin: 50px auto;
+    border: 2px #ddd;
+}
+
+.container{
+    position: relative;
+    top: 25px;
+    
+}
+
+
+#cards{
+    position: relative;
+    bottom: 200px;
+    margin: 0 auto;
+    padding: 50px;
+    width: 80%;
+    height: 100%;
+    
+}
+
+.card{
+    border: 1px;
+    border-style: solid;
+    border-color: #ddd;
+}
+
+.card-title{
+    margin-top: 25px;
+}
+
