@@ -108,7 +108,10 @@ p {
 		font-size: 17px;
 	}
 }
-*/ /* Footer styles */ * {
+
+/* Footer styles */ 
+
+* {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
