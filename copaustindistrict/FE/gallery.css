@@ -9,54 +9,74 @@ main {
 	background-image: url(http://www.new.copusa.org/wp-content/uploads/2018/10/home_yoga_bg_pattern.jpg);
 }
 
-.img-fluid {
-	width: 55%;
-	height: auto;
-}
-
-.content {
-	text-align: center;
-}
-
 .container {
 	font-size: 45px;
 	letter-spacing: 0px;
 	padding: 50px 0;
 }
 
+.gallery {
+	text-align: center;
+}
+
+.nav-link {
+	color: #dddddd;
+	background: #0e3551;
+	border: solid .5px;
+	width: 302px;
+	height: 45px;
+}
+
+#link-1 {
+	border-top-left-radius: 5px;
+}
+
+#link-4 {
+	border-top-right-radius: 5px;
+}
+
 .buttons {
-	font-size: 14px;
-	padding: 15px;
+	width: 100%;
+	height: auto;
+	padding: 20px;
+	padding-right: 820px;
 }
 
-.buttons .btn-dark {
-	position: relative;
-	right: 5px;
+.btn-primary {
+	font-size: 17px;
+	width: 200px;
+	height: 40px;
+	color: #dddddd;
+	background: #0e3551;
 }
 
-.buttons .btn-primary {
-	width: 5%;
-}
-/* videos */
-.video-content {
-	display: grid;
-	grid-template-columns: repeat(3, 1fr);
-	column-gap: 20px;
-	row-gap: 100px;
-	padding: 100px 350px;
+.btn-primary .fa-home {
+	padding: 0 10px;
 }
 
-.video-content iframe {
+.img-menu ul {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
 	width: 100%;
 }
 
-Footer styles
-
-* {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
+.img-placeholders {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	column-gap: 15px;
+	row-gap: 15px;
+	padding: 50px 350px;
 }
+
+.img-placeholders img {
+	border-style: solid;
+	border-radius: 5px;
+	width: 100%;
+	height: auto;
+}
+
+/* Footer styles */
 
 body {
 	width: 100%;
@@ -66,7 +86,7 @@ body {
 footer {
 	margin: 0;
 	padding: 0;
-	background-color: #fff;
+	background-color: #ffffff;
 }
 
 #container {
@@ -167,12 +187,13 @@ h3 {
 	}
 
 	.bottom {
-		position: relative;
-		right: 15px;
+		display: flex;
 		display: inline-block;
+		justify-content: space-evenly;
 		width: 100%;
 		text-align: center;
-		padding-right: 10px;
+		padding: 30px;
+		left: 0px;
 	}
 
 	.bottom p {
@@ -195,96 +216,97 @@ h3 {
 	}
 }
 
-@media only screen and (max-width: 767px) {
-	main {
-		font-family: "Open sans";
-		background-image: url(http://www.new.copusa.org/wp-content/uploads/2018/10/home_yoga_bg_pattern.jpg);
+/* Gallery */
+@media screen and (max-width: 767px) {
+	#link-1 {
+		border-top-left-radius: 5px;
+		border-top-right-radius: 5px;
 	}
 
-	.img-fluid {
-		width: 85%;
-		height: auto;
-	}
-	.content {
-		text-align: center;
-	}
-
-	.container {
-		font-size: 45px;
-		letter-spacing: 0px;
-		padding: 50px 0;
+	#link-4 {
+		border-top-right-radius: 0px;
 	}
 
 	.buttons {
-		font-size: 14px;
-		padding: 15px;
+		width: 100%;
+		height: auto;
+		padding: 20px;
+		padding-right: 120px;
 	}
 
-	.buttons .btn-dark {
-		position: relative;
-		right: 5px;
+	.btn-primary {
+		font-size: 17px;
+		width: 200px;
+		height: 40px;
+		margin: 5px;
+		color: #dddddd;
+		background: #0e3551;
 	}
 
-	.buttons .btn-primary {
-		width: 25%;
+	.img-menu ul {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		width: 100%;
 	}
 
-	.video-content {
+	.img-placeholders {
 		display: grid;
 		grid-template-columns: 1fr;
-		column-gap: 0px;
-		row-gap: 25px;
-		padding: 0px 0px;
+		padding: 0 0px;
 	}
 
-	.video-content iframe {
-		width: 85%;
+	.img-placeholders img {
+		border-style: solid;
+		border-radius: 5px;
+		width: 83%;
+		height: auto;
 	}
 }
 
-@media only screen and (min-width: 768px) and (max-width: 1200px) {
-	main {
-		font-family: "Open sans";
-		background-image: url(http://www.new.copusa.org/wp-content/uploads/2018/10/home_yoga_bg_pattern.jpg);
+@media screen and (min-width: 767px) and (max-width: 1200px) {
+	#link-1 {
+		border-top-left-radius: 0px;
+		border-top-right-radius: 0px;
 	}
 
-	.img-fluid {
-		width: 85%;
-		height: auto;
-	}
-	.content {
-		text-align: center;
-	}
-
-	.container {
-		font-size: 45px;
-		letter-spacing: 0px;
-		padding: 50px 0;
+	#link-4 {
+		border-top-right-radius: 0px;
 	}
 
 	.buttons {
-		font-size: 14px;
-		padding: 15px;
+		width: 100%;
+		height: auto;
+		padding: 20px;
+		padding-right: 0px;
 	}
 
-	.buttons .btn-dark {
-		position: relative;
-		right: 5px;
+	.btn-primary {
+		font-size: 17px;
+		width: 200px;
+		height: 40px;
+		margin: 5px;
+		color: #dddddd;
+		background: #0e3551;
 	}
 
-	.buttons .btn-primary {
-		width: 15%;
+	.img-menu ul {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		width: 100%;
 	}
 
-	.video-content {
+	.img-placeholders {
 		display: grid;
 		grid-template-columns: repeat(3, 1fr);
-		column-gap: 20px;
-		row-gap: 100px;
-		padding: 30px;
+		padding: 0 0px;
 	}
 
-	.video-content iframe {
-		width: 100%;
+	.img-placeholders img {
+		border-style: solid;
+		border-radius: 5px;
+		width: 83%;
+		height: auto;
 	}
 }
