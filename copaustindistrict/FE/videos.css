@@ -32,10 +32,15 @@ main {
 .buttons .btn-dark {
 	position: relative;
 	right: 5px;
+	height: 34px;
+}
+
+.fa-youtube {
+	padding: 4px;
 }
 
 .buttons .btn-primary {
-	width: 5%;
+	width: 6%;
 }
 /* videos */
 .video-content {
@@ -50,9 +55,7 @@ main {
 	width: 100%;
 }
 
-Footer styles
-
-* {
+Footer styles * {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
@@ -223,10 +226,16 @@ h3 {
 	.buttons .btn-dark {
 		position: relative;
 		right: 5px;
+		height: 34px;
+		width: 36%;
+	}
+
+	.fa-youtube {
+		padding: 5px;
 	}
 
 	.buttons .btn-primary {
-		width: 25%;
+		width: 40%;
 	}
 
 	.video-content {
@@ -242,7 +251,7 @@ h3 {
 	}
 }
 
-@media only screen and (min-width: 768px) and (max-width: 1200px) {
+@media only screen and (min-width: 768px) and (max-width: 1400px) {
 	main {
 		font-family: "Open sans";
 		background-image: url(http://www.new.copusa.org/wp-content/uploads/2018/10/home_yoga_bg_pattern.jpg);
@@ -270,6 +279,7 @@ h3 {
 	.buttons .btn-dark {
 		position: relative;
 		right: 5px;
+		height: 34px;
 	}
 
 	.buttons .btn-primary {
