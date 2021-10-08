@@ -1,0 +1,162 @@
+html,
+body {
+    font-family: 'Open Sans', sans-serif;
+    
+} 
+
+.banner {
+    width: 100%;
+    height: auto; 
+    z-index: 0;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+    margin: 100px auto;
+    width: 80%;
+    height:80vh;
+    position: relative;
+    min-width: 300px;
+    
+}
+
+.centertitle {
+  text-align: center;
+
+}
+
+
+.description {
+  display: inline-block;
+    justify-content: center;
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+#more {
+  font-size: 30px;
+}
+
+
+.wrapper > * {
+    flex-basis: 0;
+    flex-wrap: wrap;
+    flex: 1 1 50%;
+}
+
+.right {
+  flex: 1 0;
+}
+
+.left {
+  flex: 2 0;
+  padding-left: 100px;
+}
+
+
+.slogan {
+    margin-left: 20px;
+    line-height: 2;
+    list-style: disc;
+}
+
+IMG.pastorimg {
+    display: block;
+    margin-left: auto;
+    margin-right: auto 
+  }
+
+  .slide-container .prev,
+.slide-container .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  transition: all 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.slide-container .prev:hover,
+.slide-container .next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+}
+
+.slide-container .prev {
+  left: 2px;
+}
+
+.slide-container .next {
+  right: 2px;
+}
+
+.dots-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+
+.dots-container .dot {
+  cursor: pointer;
+  margin: 5px;
+  width: 20px;
+  height: 20px;
+  color: #333;
+  border-radius: 50%;
+  background-color: #dfd6ce;
+}
+
+.dots-container .dot.active {
+  border: 2px solid #005368;
+}
+
+.slide-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-height: 30.00em;
+  max-width: 62.5em;
+  overflow: hidden;
+  margin: auto;
+  position: relative;
+}
+
+.slide-container .slide {
+  display: none;
+  width: 100%;
+}
+
+.slide-container .slide.fade {
+  animation: fade 0.5s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
+}
+
+.slide-container .slide img {
+  width: 100%;
+}
+
+
+  @media  (max-width: 900px) {
+    .wrapper {
+      flex-direction: column;
+      height:100%;
+        font-size: 12px;
+
+    }
+
+}
+
+@media (max-width: 900px) {
+  .right, .left {
+    flex: 100%;
+    padding-bottom: 50px;
+  }
+}
