@@ -1,0 +1,53 @@
+h1 {
+    text-align: center;
+    padding: 20px 0;
+}
+
+#church-name {
+    color: black;
+}
+
+/* Main Div */
+.history {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 20px;
+}
+
+/* Left Side Div */
+.church-info {
+    text-align: center;
+    margin-top: auto;
+    margin-bottom: auto;
+    padding-right: 20px;
+}
+#church-name {
+    padding-bottom: 20px;
+    font-size: 25px;
+    padding-right: 0;
+}
+
+/* Right Div */
+.pdf-holder {
+    padding-left: 20px;
+}
+
+/* Media Queries */
+@media only screen and (max-width: 992px) {
+.history {
+    grid-template-columns: 1fr;
+}
+
+.church-info {
+    padding-bottom: 20px;
+    padding-right: 0;
+}
+.pdf-holder {
+    padding-left: 0;
+}
+}
+
+/* @media only screen and (min-width: ) */
