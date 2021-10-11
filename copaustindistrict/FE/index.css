@@ -113,6 +113,9 @@ h2 {
     display: block;
 }
 
+.display-search {
+    display:none;
+}
 /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
 @media screen and (max-width: 700px) {
    h2 {
@@ -276,22 +279,22 @@ h2 {
 }
 
 @media screen and (max-width: 600px){
-    #pastor-message {
-        box-sizing: border-box;
-        display: flex;
-        width: 100%;
-        height: 46vh;
-        padding: 0;
-        margin: 0;
-        background-image: url('images/mwtpastor.png');
-        background-repeat: no-repeat;
-        background-position: center center;
-        background-size: cover;
-        overflow: hidden;
-        position: relative;
-        text-align: center;
-        color: white;
-    }
+    /*#pastor-message {*/
+    /*    box-sizing: border-box;*/
+    /*    display: flex;*/
+    /*    width: 100%;*/
+    /*    height: 46vh;*/
+    /*    padding: 0;*/
+    /*    margin: 0;*/
+    /*    background-image: url('images/mwtpastor.png');*/
+    /*    background-repeat: no-repeat;*/
+    /*    background-position: center center;*/
+    /*    background-size: cover;*/
+    /*    overflow: hidden;*/
+    /*    position: relative;*/
+    /*    text-align: center;*/
+    /*    color: white;*/
+    /*}*/
     .pastor-text {
         position: absolute;
         top: 50%;
