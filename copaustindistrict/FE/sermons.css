@@ -17,14 +17,16 @@ a {
 p {
 	font-size: 14px;
 	opacity: .87;
-	margin: 8px 0;
+	margin: 10px 0;
 }
 
 .card hr {
 	align-content: center;
 	width: 95%;
+	height: 1px;
 	margin: 50px auto;
-	border: 2px #ddd;
+	color: #ddd;
+	opacity: .5;
 }
 
 .container {
@@ -34,6 +36,9 @@ p {
 
 #cards {
 	position: relative;
+	display: flex;
+	flex-direction: column;
+	row-gap: 35px;
 	bottom: 200px;
 	margin: 0 auto;
 	padding: 50px;
@@ -47,7 +52,12 @@ p {
 	border-color: #ddd;
 }
 
+.card-body {
+	background-color: #ffffff;
+}
+
 .card-title {
+	font-size: 30px;
 	margin-top: 25px;
 	color: #000000;
 }
@@ -106,10 +116,11 @@ p {
 	.card-title {
 		margin-top: 25px;
 		font-size: 17px;
+		padding: 5px;
 	}
 }
 
-/* Footer styles */ 
+/* Footer styles */
 
 * {
 	margin: 0;
@@ -226,11 +237,11 @@ h3 {
 
 	.bottom {
 		position: relative;
-		left: 15px;
+		left: 0px;
 		display: inline-block;
-		width: 95%;
+		width: 100%;
 		text-align: center;
-		padding-right: 10px;
+		padding-right: 35px;
 	}
 
 	.bottom p {
