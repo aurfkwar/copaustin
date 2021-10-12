@@ -9,8 +9,10 @@ main {
 	background-image: url(http://www.new.copusa.org/wp-content/uploads/2018/10/home_yoga_bg_pattern.jpg);
 }
 
-.container {
+.gallery h2 {
+	color: #000000;
 	font-size: 45px;
+	font-weight: 500;
 	letter-spacing: 0px;
 	padding: 50px 0;
 }
@@ -20,11 +22,22 @@ main {
 }
 
 .nav-link {
+	display: flex;
+	flex-direction: column;
 	color: #dddddd;
 	background: #0e3551;
 	border: solid .5px;
 	width: 302px;
 	height: 45px;
+}
+
+.nav-link:hover {
+	background: rgb(46, 101, 219);
+}
+
+.gallery ul {
+	display: flex;
+	justify-content: center;
 }
 
 #link-1 {
@@ -48,6 +61,10 @@ main {
 	height: 40px;
 	color: #dddddd;
 	background: #0e3551;
+}
+
+.btn-primary:hover {
+	background: rgb(46, 101, 219);
 }
 
 .btn-primary .fa-home {
@@ -217,7 +234,22 @@ h3 {
 }
 
 /* Gallery */
+
 @media screen and (max-width: 767px) {
+	.menu {
+		position: relative;
+		right: 10px;
+	}
+
+	.gallery ul {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex-direction: column;
+		color: #dddddd;
+		width: 100%;
+	}
+
 	#link-1 {
 		border-top-left-radius: 5px;
 		border-top-right-radius: 5px;
@@ -231,7 +263,6 @@ h3 {
 		width: 100%;
 		height: auto;
 		padding: 20px;
-		padding-right: 120px;
 	}
 
 	.btn-primary {
@@ -241,6 +272,10 @@ h3 {
 		margin: 5px;
 		color: #dddddd;
 		background: #0e3551;
+	}
+
+	.btn-primary:hover {
+		background: rgb(46, 101, 219);
 	}
 
 	.img-menu ul {
@@ -254,6 +289,8 @@ h3 {
 		display: grid;
 		grid-template-columns: 1fr;
 		padding: 0 0px;
+		row-gap: 15px;
+		column-gap: 15px;
 	}
 
 	.img-placeholders img {
@@ -264,7 +301,18 @@ h3 {
 	}
 }
 
-@media screen and (min-width: 767px) and (max-width: 1200px) {
+@media screen and (min-width: 768px) and (max-width: 992px) {
+	.gallery ul {
+		display: flex;
+		color: #dddddd;
+		margin: 0 50px;
+	}
+
+	.gallery a {
+		width: 180px;
+		height: 63px;
+	}
+
 	#link-1 {
 		border-top-left-radius: 0px;
 		border-top-right-radius: 0px;
@@ -288,6 +336,75 @@ h3 {
 		margin: 5px;
 		color: #dddddd;
 		background: #0e3551;
+	}
+
+	.btn-primary:hover {
+		background: rgb(46, 101, 219);
+	}
+
+	.img-menu ul {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		width: 100%;
+	}
+
+	.img-placeholders {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		padding: 0 0px;
+	}
+
+	.img-placeholders img {
+		border-style: solid;
+		border-radius: 5px;
+		width: 83%;
+		height: auto;
+	}
+}
+
+@media screen and (min-width: 993px) and (max-width: 1200px) {
+	.gallery ul {
+		display: flex;
+		color: #dddddd;
+		width: 100%;
+	}
+
+	.gallery ul:hover {
+		background: rgb(46, 101, 219);
+	}
+
+	#link-1 {
+		border-top-left-radius: 0px;
+		border-top-right-radius: 0px;
+	}
+
+	#link-4 {
+		border-top-right-radius: 0px;
+	}
+
+	.gallery a {
+		width: 100%;
+	}
+
+	.buttons {
+		width: 100%;
+		height: auto;
+		padding: 20px;
+		padding-right: 0px;
+	}
+
+	.btn-primary {
+		font-size: 17px;
+		width: 200px;
+		height: 40px;
+		margin: 5px;
+		color: #dddddd;
+		background: #0e3551;
+	}
+
+	.btn-primary:hover {
+		background: rgb(46, 101, 219);
 	}
 
 	.img-menu ul {
