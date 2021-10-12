@@ -250,10 +250,6 @@ h3 {
 		width: 100%;
 	}
 
-	.gallery ul:hover {
-		background: rgb(46, 101, 219);
-	}
-
 	#link-1 {
 		border-top-left-radius: 5px;
 		border-top-right-radius: 5px;
@@ -310,10 +306,6 @@ h3 {
 		display: flex;
 		color: #dddddd;
 		margin: 0 50px;
-	}
-
-	.gallery ul:hover {
-		background: rgb(46, 101, 219);
 	}
 
 	.gallery a {
