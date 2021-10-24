@@ -221,6 +221,7 @@ h2 {
     width: 100%;
     /*height: 46vh;*/
     background-color: #fff;
+    overflow: hidden;
 
 }
 #announcements h2 {
