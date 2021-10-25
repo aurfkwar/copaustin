@@ -29,7 +29,7 @@ main {
     flex-wrap: wrap;
     margin: 50px auto;
     width: 60%;
-    height: 60vh;
+    height: 50vh;
     justify-content: center;
     position: relative;
     min-width: 300px;
@@ -47,6 +47,14 @@ main {
     flex: 1;
 }
 
+.role {
+    color:hsl(6, 79%, 60%);
+    font-size: 15px;
+    padding-top: 1em;
+    
+}
+
+
 .centertitle {
     text-align: center;
   
@@ -56,7 +64,7 @@ main {
   #amy {
     display: flex;
     flex-direction: column;
-    justify-content:space-around;
+    justify-content:space-evenly;
     align-content: center;
     flex: 1;
     text-align: center;
@@ -66,7 +74,7 @@ main {
   #raynell {
     display: flex;
     flex-direction: column;
-    justify-content:space-around;
+    justify-content:space-evenly;
     align-content: center;
     flex: 1;
     text-align: center;
@@ -75,7 +83,7 @@ main {
   #rosemarie {
     display: flex;
     flex-direction: column;
-    justify-content:space-around;
+    justify-content:space-evenly;
     align-content: center;
     flex: 1;
     text-align: center;
@@ -85,7 +93,7 @@ main {
   #sasha {
     display: flex;
     flex-direction: column;
-    justify-content:space-around;
+    justify-content:space-evenly;
     align-content: center;
     flex: 1;
     text-align: center;
@@ -98,6 +106,7 @@ main {
     font-size: 15px;
     border-style: none;
     padding: 10px 20px;
+    margin: 1em;
   }
 
   .linkedinbutton:hover {
@@ -136,7 +145,6 @@ main {
   @media screen and (max-width:900px) {
     #developers {
         flex-direction: column;
-        /* width: 150px; */
         height: 100%;
         justify-content: space-between;
         
@@ -158,4 +166,15 @@ main {
     #sasha {
         padding: 30px;
     }
+
+    .linkedinbutton {
+        margin-top: 2em;
+        margin-bottom: 1em;
+
+    }
+
+    .gitbutton {
+        margin: 1em;
+    }
+
 }
