@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+  {% load static %}
+<head>
+    <meta charset="UTF-8">
+    <title>The Men's  Ministry: PEMEM</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<!--  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">-->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+  <link rel="stylesheet" href="{% static 'css/index.css' %}">
+  <link rel= "stylesheet" href="{% static 'css/mensministry.css' %}">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/ico" href="(% static 'images/favicon.ico' %)" />
+
+</head>
+
+<body>
+
+  
+  <!-- Header -->
+  <header class="topnav" id="myTopnav">
+    <img class="logo" src="{% static 'images/coplogo.png' %}">
+    <h2>The Church Of Pentecost U.S.A, Inc <br>
+      Austin District</h2>
+    <nav>
+    <a href="/" class="active">Home</a>
+    <div class="dropdown">
+      <button class="dropbtn" onclick="window.location.href='aboutus';">About Us
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+        <a href="leadership">Our Leadership</a>
+        <a href="tenets">Tenets &amp; Beliefs</a>
+        <a href="history">History</a>
+      </div>
+    </div>
+    <div class="dropdown">
+      <button class="dropbtn" onclick="window.location.href='ministries';">Ministries
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+        <a href="childrenministry">Children&#39;s Ministry</a>
+        <a href="evangelismministry">Evangelism Ministry</a>
+        <a href="">Men&#39;s Ministry</a>
+        <a href="womensministry">Women&#39;s Ministry</a>
+        <a href="youthministry">Youth &amp; Pensa</a>
+      </div>
+    </div>
+    <div class="dropdown">
+      <button class="dropbtn" onclick="window.location.href='local';">Locals
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+        <a href="https://austinpiwc.copaustin.org/">Austin PIWC</a>
+        <a href="https://killeenassembly.copaustin.org/" >Killeen Assembly</a>
+        <a href="https://sanantonioassembly.copaustin.org/" >San Antonio Assembly</a>
+        <a href="https://sanmarcosassembly.copaustin.org" >San Marcos Assembly</a>
+      </div>
+    </div>
+    <div class="dropdown">
+      <button class="dropbtn" onclick="window.location.href='churchmedia';">Media
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+        <a href="gallery">Gallery</a>
+        <a href="sermons">Sermon</a>
+        <a href="videos">Videos</a>
+      </div>
+    </div>
+  
+    <a href="contacts">Contact Us</a>
+    <a href="donate">Donate</a>
+    <!-- <form id="app" action="#">
+      <label :data-state="state" for="search">
+        <input type="text" placeholder="Search" @click="state = 'opan'" @blur="state='close'"/>
+        <i class="fa fa-search" @click="" aria-hidden="true"></i>
+      </label>
+      </form> -->
+    <!-- <div class="dropdown">
+      <button class="dropbtn">
+      
+       <i class="fa fa-search" onclick=displayInput() aria-hidden="true"></i>
+      </button>
+  
+           <div  id="togglesearch_none">
+            <form action="{% url 'index' %}" method="GET">
+              <input type="text" placeholder="Search" aria-label="Search" name="search" value="{{index}}"/>
+             <input type="button" value="Search"/> 
+            
+            </form>
+          </div>
+      
+    </div>  -->
+      <!-- <a href="#"><i class="fa fa-search"> </i>  -->
+      
+       
+  <!--&lt;!&ndash;    </i><input type="text" size="15">-->
+   <a href="javascript:void(0);" class="menu-btn" onclick="myFunction()"> 
+        <div class="btn-line"></div>
+        <div class="btn-line"></div>
+        <div class="btn-line"></div>
+    </a>
+    </nav>
+  </header>
+
+<!-- Header -->
+
+
+<!-- Main Content -->
+
+
+    <div class="banner">
+      <img class="banner" src="{% static 'images/mensminimages/menbanner.jpg' %}" alt="men's ministry banner">
+    </div>
+
+    <div class="wrapper">
+  
+        <div class="right" >
+
+          <h1 class="centertitle" id="lord"> Man! <br>
+            The Image and <br> the Glory of God!! </h1>
+
+            <br>
+            <br>
+
+            {% for x in menministry %}
+              <img class="pastorimg" src="{{x.menleaderImg.url}}"  width="270" height= "270" alt="Districtleader">
+
+              <h4 class="centertitle">{{x.menleader_name}}</h4>
+              <h5 class="centertitle">(District Leader)</h5>
+    
+              {% endfor %}
+          
+        </div>
+        <div class="left">  
+          <div >
+          <h1 class="maintitle"> PEMEM </h1> 
+          <br>
+          <p class="description">
+            The Men’s Ministry is a wing of The Church of Pentecost named the Pentecost Men’s Ministry (PEMEM) established by the International Executive Council of the Church in 1997 to cater for the interest of all men in the church and to provide a forum for gathering and teaching the Church’s male population in all aspects of Christian life. The ministry organizes seminars, workshops, lectures and symposia on all aspects of life including: Marriage enrichment, husbands’ responsibilities at home, child care and education, business management and techniques, leadership and responsibility in the Church and the State, current affairs at both national and international levels, the teaching of basic principles of domestic law and other specialized men-related ministries.
+          </p>
+    
+
+          <br>
+          <br>
+
+          <h1 class="maintitle">Vision</h1>
+          <br>
+          <p class="description">
+            To become an effective and significant ministry to passionately reach Men for Christ in partnership with the church.
+          </p>
+
+          <br>
+          <br>
+
+          
+            <h1 class="maintitle">Slogan</h1>
+            <br>
+            <ul class="description">
+              <li class="slogan"> Man! The image and the glory of God! </li>
+              <li class="slogan"> Man! Be Strong and courageous! </li>
+            </ul>
+            
+            <p>Our ultimate mission is to win the world for Christ through propagation of the gospel to the utmost part of the earth. </p>
+  
+          </div>
+
+        </div>
+        
+      
+
+    </div>
+
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <!-- Slideshow container -->
+{% for x in menministry %}   
+<div class="slideshow-container">
+
+  <h1 class="centertitle" id="more">More From PEMEM</h1>
+  <br>
+
+  <div class="slide-container">
+    <div class="slide fade">
+      <img src="{{x.menslide1.url}}" alt="Image">
+    </div>
+    <div class="slide fade">
+      <img src="{{x.menslide2.url|default_if_none:'#'}}" alt="Image">
+    </div>
+    <div class="slide fade">
+      <img src= "{{x.menslide3.url|default_if_none:'#'}}" alt= "Image">
+    </div>
+
+    <a  class="prev" title="Previous">&#10094</a>
+    <a  class="next" title="Next">&#10095</a>
+  </div>
+  <div class="dots-container">
+    <span class="dot"></span>
+    <span class="dot"></span>
+    <span class="dot"></span>
+  </div>
+
+</div>
+{% endfor %}
+
+<br>
+<br>
+
+
+    <!--End Main Content -->
+
+
+    <!-- Footer -->
+    <footer>
+      <div id="container">
+       
+    
+       <!-- Resources -->
+       <div class="resources">
+        <h3>Resources</h3>
+        <div class="line"></div>
+        <ul>
+          <li>
+            <i class="fas fa-caret-right"></i>
+            <a href="biblestudies">Bible Studies</a>
+          </li>
+          <li>
+            <i class="fas fa-caret-right"></i>
+            <a href="books">Books</a>
+          </li>
+          <li>
+            <i class="fas fa-caret-right"></i>
+            <a href="pentecostsongs">Pentecost Songs</a>
+          </li>
+        </ul>
+      </div>
+  
+      <!-- Quick Links -->
+      <div class="quick-links">
+        <h3>External Links</h3>
+        <div class="line"></div>
+        <ul>
+          <li>
+              <i class="fas fa-caret-right"></i>
+              <a href="https://thecophq.org/">International HQ</a>
+          </li>
+          <li>
+              <i class="fas fa-caret-right"></i>
+              <a href="https://www.copusa.org/">National HQ</a>
+          </li>
+          <li>
+              <i class="fas fa-caret-right"></i>
+              <a href="https://www.copusa.org/texas-region/">Texas Region</a>
+          </li>
+          <li>
+              <i class="fas fa-caret-right"></i>
+              <a href="https://business.facebook.com/Church-of-Pentecost-Austin-District-Outreach-and-Discipleship-wing-104092241275458/">Outreach</a>
+          </li>
+      </ul>
+      </div>
+    
+        <!-- About Us -->
+        <div class="about-us">
+          <h3>About Us</h3>
+          <div class="line"></div>
+          <p>The Church of Pentecost U.S.A Inc., Austin District, is a non-profit-making Pentecostal church with its district seat in
+            Austin, Texas.
+          </p>
+    
+          <!-- <a href="">Send Us a Message</a> -->
+          <button onclick="window.location.href = 'contacts';">Send Us a Message</button>
+        </div>
+      </div>
+      <hr>
+      <section class="bottom">
+        <p>Copyright &copy; 2021 The Church of Pentecost U.S.A. Inc., Austin District. </p>
+        <a href="websitebuilders">Website Builders</a>
+        <a href="admin/" target="_blank" rel="noopener noreferrer">Site Admin</a>
+        <ul>
+          <li>
+            <a href="https://business.facebook.com/Church-of-Pentecost-Austin-District-Outreach-and-Discipleship-wing-104092241275458/"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.copaustin.org/"><i class="fas fa-caret-right"></i></a>
+            <a href="#"><i class="fas fa-chevron-up"></i></a>
+          </li>
+        </ul>
+      </section>
+    </footer>
+    <script src="{% static 'css/menu.js' %}" ></script>
+    <script src="{% static 'css/slideshow.js' %}"></script>
+    <script src="{% static 'css/leadership.js' %}" defer></script>
+    <script src="{% static 'css/ministrycarousel.js' %}"></script>
+  
+</body>
+</html>

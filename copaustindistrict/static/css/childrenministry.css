@@ -1,0 +1,133 @@
+html,
+body {
+    font-family: 'Open Sans', sans-serif;
+    
+} 
+
+.banner {
+    width: 100%;
+    height: auto; 
+    z-index: 0;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+    margin: 60px auto;
+    width: 80%;
+    height:80vh;
+    position: relative;
+    min-width: 300px;
+    
+}
+
+.centertitle {
+  text-align: center;
+
+}
+
+
+.description {
+  /* display: inline-block; */
+    justify-content: center;
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+#more {
+  font-size: 30px;
+}
+
+
+.wrapper > * {
+    flex-basis: 0;
+    flex-wrap: wrap;
+    flex: 1 1 50%;
+}
+
+.right {
+  flex: 1 0;
+}
+
+.left {
+  flex: 2 0;
+  padding-left: 100px;
+}
+
+
+.slogan {
+    margin-left: 20px;
+    line-height: 2;
+    list-style: disc;
+}
+
+img.pastorimg {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 50%; 
+  }
+
+
+.auto-slider{
+    position: relative;
+    box-sizing: content-box;
+    /* display: inline-block; */
+    max-width: 1000px;
+    margin: 0 auto;
+    overflow: hidden;
+ 
+}
+
+div#slider { overflow: hidden; }
+div#slider figure img { width: 20%;  }
+div#slider figure { 
+  position: relative;
+  width: 500%;
+  margin: 0;
+  left: 0;
+  /* text-align: left; */
+  font-size: 0;
+  animation: 10s sliding ease-in-out infinite; 
+  
+}
+
+
+@keyframes sliding{
+    0%{left: 0%; }
+    16.66%{left: -100%;}
+    /* 40%{left: -200%;}
+    60%{left: -300%;}
+    80%{left: -400%;}
+    100%{left: 0%;} */
+    
+  
+}        
+
+@keyframes indicating{
+    from{
+        left: -100%;
+    }
+    to{
+        left: 0;
+    }
+}  
+
+
+@media  (max-width: 900px) {
+    .wrapper {
+      flex-direction: column;
+      height:100%;
+        font-size: 12px;
+
+    }
+
+}
+
+@media (max-width: 900px) {
+  .right, .left {
+    flex: 100%;
+    padding-bottom: 50px;
+  }
+}

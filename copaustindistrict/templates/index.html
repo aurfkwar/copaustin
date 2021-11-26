@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+<head>
+    <meta charset="UTF-8">
+    <title>COP Austin District</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<!--  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">-->
+  <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous"> -->
+
+        {% block style %}
+        <link rel="stylesheet" type="text/css" href="{% static 'fontawesome/css/all.min.css' %}" />
+    {% endblock %}
+  <link rel="stylesheet" href="{% static 'css/index.css' %}">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/ico" href="(% static 'images/favicon.ico' %)"/>
+
+</head>
+<body>
+  {% block body %}
+  
+<header class="topnav" id="myTopnav">
+  <img class="logo" src="{% static 'images/coplogo.png' %}">
+  <h2>The Church Of Pentecost U.S.A, Inc <br>
+    Austin District</h2>
+  <nav>
+  <a href="" class="active">Home</a>
+  <div class="dropdown">
+    <button class="dropbtn" onclick="window.location.href='aboutus';">About Us
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="leadership">Our Leadership</a>
+      <a href="tenets">Tenets &amp; Beliefs</a>
+      <a href="history">History</a>
+    </div>
+  </div>
+  <div class="dropdown">
+    <button class="dropbtn" onclick="window.location.href='ministries';">Ministries
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="childrenministry">Children&#39;s Ministry</a>
+      <a href="evangelismministry">Evangelism Ministry</a>
+      <a href="mensministry">Men&#39;s Ministry</a>
+      <a href="womensministry">Women&#39;s Ministry</a>
+      <a href="youthministry">Youth &amp; Pensa</a>
+    </div>
+  </div>
+  <div class="dropdown">
+    <button class="dropbtn" onclick="window.location.href='local';">Locals
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="https://austinpiwc.copaustin.org/">Austin PIWC</a>
+      <a href="https://killeenassembly.copaustin.org/" >Killeen Assembly</a>
+      <a href="https://sanantonioassembly.copaustin.org/" >San Antonio Assembly</a>
+      <a href="https://sanmarcosassembly.copaustin.org" >San Marcos Assembly</a>
+    </div>
+  </div>
+  <div class="dropdown">
+    <button class="dropbtn" onclick="window.location.href='churchmedia';">Media
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="gallery">Gallery</a>
+      <a href="sermons">Sermon</a>
+      <a href="videos">Videos</a>
+    </div>
+  </div>
+
+  <a href="contacts">Contact Us</a>
+  <a href="donate">Donate</a>
+  <!-- <form id="app" action="#">
+    <label :data-state="state" for="search">
+      <input type="text" placeholder="Search" @click="state = 'opan'" @blur="state='close'"/>
+      <i class="fa fa-search" @click="" aria-hidden="true"></i>
+    </label>
+    </form> -->
+  <!-- <div class="dropdown">
+    <button class="dropbtn">
+    
+     <i class="fa fa-search" onclick=displayInput() aria-hidden="true"></i>
+    </button>
+
+         <div  id="togglesearch_none">
+          <form action="{% url 'index' %}" method="GET">
+            <input type="text" placeholder="Search" aria-label="Search" name="search" value="{{index}}"/>
+           <input type="button" value="Search"/> 
+          
+          </form>
+        </div>
+    
+  </div>  -->
+    <!-- <a href="#"><i class="fa fa-search"> </i>  -->
+    
+     
+<!--&lt;!&ndash;    </i><input type="text" size="15">-->
+ <a href="javascript:void(0);" class="menu-btn" onclick="myFunction()"> 
+      <div class="btn-line"></div>
+      <div class="btn-line"></div>
+      <div class="btn-line"></div>
+  </a>
+  </nav>
+</header>
+<main>
+  <div id="slideshow" data-component="slideshow">
+    {% for slide in homepageslide %}
+   
+      <div role="list">
+        <div class="sslide">
+          <!-- {{slide.slide_title}} -->
+          <img src="{{slide.slideshow_image1.url}}" width="100%" alt="">
+         
+        </div>
+        <!-- <div class="slide">
+          <img src="{{slide.slideshow_image2.url}}" width="100%" alt=""> 
+         
+        </div>
+        <div class="slide">
+          <img src="{{slide.slideshow_image3.url}}" width="100%" alt="">  
+         
+        </div>  -->
+         <!-- <div class="slide">
+          <img src="{% static 'images/GeraldandAps.jpeg' %}" width="100%" alt="">
+        </div> -->
+      </div>
+      {% endfor %}
+  </div>
+  <div id="announcements">
+    
+      <h2><i class="fas fa-bullhorn"></i><span>&nbsp; Announcement</span></h2>
+   <!-- {% for announcement in homepageannouncement %}
+      {% if announcement.announcementImg %}
+  
+       <img src="{{announcement.announcementImg.url|default_if_none:'#'}}" width="100%" alt="">  -->
+       
+      <!-- <img src="{% static 'images/2018ChristmasConv1.jpeg' %}" width="100%" alt=""> -->
+    
+      <!-- <p>Welcome...Come worship with us...We love God and believe we are saved by our Saviour Jesus Christ, who lives. 
+        
+        The Church of Pentecost is a place for spiritual growth and meaningful fellowship. 
+        We hope you enjoy your time with us and experience the genuine love of God.</p> -->
+     
+        <!-- {% else %}
+        <p>
+          {{announcement.body|default_if_none:"&nbsp;" }} 
+        </p>
+        {% endif %}
+        {% endfor %} -->
+       
+        <div class="slideshow-container">
+          {% for announcement in homepageannouncement %}
+          <div class="slide-container">
+           
+            <div class="slide fade">
+              <img src="{{announcement.announcementImg1.url|default_if_none:'#'}}" alt="Image">
+            </div>
+            <!-- <div class="slide fade">
+              <img src="{{announcement.announcementImg2.url|default_if_none:'#'}}" alt="Image">
+            </div>
+            <div class="slide fade">
+              <img src="{{announcement.announcementImg3.url|default_if_none:'#'}}" alt="Image">
+            </div> -->
+          
+            <!-- <div class="slide fade">
+              <img src="https://copaustin.s3.us-east-2.amazonaws.com/LubbockPIWC1.jpeg" alt="Image">
+            </div>
+            <div class="slide fade">
+              <img src= "https://copaustin.s3.us-east-2.amazonaws.com/LubbockPIWC2.jpeg" alt="Image">
+            </div> -->
+        
+            <a  class="prev" title="Previous">&#10094</a>
+            <a  class="next" title="Next">&#10095</a>
+          </div>
+         
+          <div class="dots-container">
+            <span class="dot"></span>
+            <!-- <span class="dot"></span>
+            <span class="dot"></span> -->
+          </div>
+          {% endfor %}
+        </div> 
+     
+  </div>
+
+  <div id="pastor-message">
+    <!-- <img class="background-image" src="{% static 'images/mwtpastor.png' %}" width="100%" alt="Message Image"> -->
+    <div class="pastor-text">
+      <h2>Moving with the District Pastor</h2>
+      <p>Ovr. Gerald Hagan is the District Pastor of The Church of Pentecost U.S.A, Inc. Austin. <br>
+        Click link below for the message he has for you.</p>
+      <button onclick="window.location.href='pastorpage';">Learn More</button>
+    </div>
+  </div>
+
+
+</main>
+<footer>
+  <div id="container">
+
+    <!-- Resources -->
+    <div class="resources">
+      <h3>Resources</h3>
+      <div class="line"></div>
+      <ul>
+        <li>
+          <i class="fas fa-caret-right"></i>
+          <a href="biblestudies">Bible Studies</a>
+        </li>
+        <li>
+          <i class="fas fa-caret-right"></i>
+          <a href="books">Books</a>
+        </li>
+        <li>
+          <i class="fas fa-caret-right"></i>
+          <a href="pentecostsongs">Pentecost Songs</a>
+        </li>
+      </ul>
+    </div>
+
+    <!-- Quick Links -->
+    <div class="quick-links">
+      <h3>External Links</h3>
+      <div class="line"></div>
+      <ul>
+        <li>
+            <i class="fas fa-caret-right"></i>
+            <a href="https://thecophq.org/">International HQ</a>
+        </li>
+        <li>
+            <i class="fas fa-caret-right"></i>
+            <a href="https://www.copusa.org/">National HQ</a>
+        </li>
+        <li>
+            <i class="fas fa-caret-right"></i>
+            <a href="https://www.copusa.org/texas-region/">Texas Region</a>
+        </li>
+        <li>
+            <i class="fas fa-caret-right"></i>
+            <a href="https://business.facebook.com/Church-of-Pentecost-Austin-District-Outreach-and-Discipleship-wing-104092241275458/">Outreach</a>
+        </li>
+    </ul>
+    </div>
+
+    <!-- About Us -->
+    <div class="about-us">
+      <h3>About Us</h3>
+      <div class="line"></div>
+      <p>The Church of Pentecost U.S.A Inc., Austin District, is a non-profit-making Pentecostal church with its district seat in
+        Austin, Texas.
+      </p>
+
+      <!-- <a href="">Send Us a Message</a> -->
+      <button onclick="window.location.href = 'contacts';">Send Us a Message</button>
+    </div>
+  </div>
+  <hr>
+  <section class="bottom">
+    <p>Copyright &copy; 2021 The Church of Pentecost U.S.A. Inc., Austin District. </p>
+    <a href="websitebuilders" target="_blank" rel="noopener noreferrer">Website Builders</a>
+    <a href="admin/" target="_blank" rel="noopener noreferrer">Site Admin</a>
+    <ul>
+      <li>
+        <a href="https://business.facebook.com/Church-of-Pentecost-Austin-District-Outreach-and-Discipleship-wing-104092241275458/"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://www.copaustin.org/"><i class="fas fa-caret-right"></i></a>
+        <a href="#"><i class="fas fa-chevron-up"></i></a>
+      </li>
+    </ul>
+  </section>
+</footer>
+<script src="{% static 'css/menu.js' %}" ></script>
+<script src="{% static 'css/slideshow.js' %}"></script>
+
+<style>
+  
+@media screen and (max-width: 992px) {
+  #pastor-message {
+        box-sizing: border-box;
+        display: flex;
+        width: 100%;
+        height: 46vh;
+        padding: 0;
+        margin: 0;
+        background-image: url("static/images/mwtpastor.png");
+        background-color: #cccccc;
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+        overflow: hidden;
+        position: relative;
+        text-align: center;
+        color: white;
+    }
+
+}
+
+@media screen and (min-width: 992px) {
+
+  
+    #pastor-message {
+        box-sizing: border-box;
+        display: flex;
+        width: 100%;
+        height: 56vh;
+        padding: 0;
+        margin: 0;
+        background-image: url("static/images/mwtpastor.png");
+        background-color: #cccccc;
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+        overflow: hidden;
+        position: relative;
+        text-align: center;
+        color: white;
+    }
+  }
+  
+  @media screen and (max-width: 749px){
+    #pastor-message {
+        box-sizing: border-box;
+        display: flex;
+        width: 100%;
+        height: 35vh;
+        padding: 0;
+        margin: 0;
+        background-image: url("static/images/mwtpastor.png");
+        background-color: #cccccc;
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+        overflow: hidden;
+        position: relative;
+        text-align: center;
+        color: white;
+    }
+  }
+@media screen and (max-width: 600px){
+    #pastor-message {
+        box-sizing: border-box;
+        display: flex;
+        width: 100%;
+        /* height: 20vh; */
+        padding: 0;
+        margin: 0;
+        background-image: url("static/images/mwtpastor.png");
+        background-color: #cccccc;
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+        overflow: hidden;
+        position: relative;
+        text-align: center;
+        color: white;
+    }
+
+}
+</style>
+<script src="{% static 'css/index.js' %}" ></script>
+<script src="{% static 'css/ministrycarousel.js' %}"></script>
+{% endblock %}
+</body>
+</html>

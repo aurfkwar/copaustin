@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="menustyle.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/ico" href="images/favicon.ico" />
+
+</head>
+<body>
+  <header class="topnav" id="myTopnav">
+    <img class="logo" src="{% static 'images/coplogo.png' %}">
+    <h2>The Church Of Pentecost U.S.A, Inc <br>
+      Austin District</h2>
+    <nav>
+    <a href="" class="active">Home</a>
+    <div class="dropdown">
+      <button class="dropbtn" onclick="window.location.href='aboutus';">About Us
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+        <a href="leadership">Our Leadership</a>
+        <a href="tenets">Tenets &amp; Beliefs</a>
+        <a href="history">History</a>
+      </div>
+    </div>
+    <div class="dropdown">
+      <button class="dropbtn" onclick="window.location.href='ministries';">Ministries
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+        <a href="childrenministry">Children&#39;s Ministry</a>
+        <a href="evangelismministry">Evangelism Ministry</a>
+        <a href="mensministry">Men&#39;s Ministry</a>
+        <a href="womensministry">Women&#39;s Ministry</a>
+        <a href="youthministry">Youth &amp; Pensa</a>
+      </div>
+    </div>
+    <div class="dropdown">
+      <button class="dropbtn" onclick="window.location.href='local';">Locals
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+        <a href="https://austinpiwc.copaustin.org/">Austin PIWC</a>
+        <a href="https://killeenassembly.copaustin.org/" >Killeen Assembly</a>
+        <a href="https://sanantonioassembly.copaustin.org/" >San Antonio Assembly</a>
+        <a href="https://sanmarcosassembly.copaustin.org" >San Marcos Assembly</a>
+      </div>
+    </div>
+    <div class="dropdown">
+      <button class="dropbtn" onclick="window.location.href='churchmedia';">Media
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+        <a href="gallery">Gallery</a>
+        <a href="sermons">Sermon</a>
+        <a href="videos">Videos</a>
+      </div>
+    </div>
+  
+    <a href="contacts">Contact Us</a>
+    <a href="donate">Donate</a>
+    <!-- <form id="app" action="#">
+      <label :data-state="state" for="search">
+        <input type="text" placeholder="Search" @click="state = 'opan'" @blur="state='close'"/>
+        <i class="fa fa-search" @click="" aria-hidden="true"></i>
+      </label>
+      </form> -->
+    <!-- <div class="dropdown">
+      <button class="dropbtn">
+      
+       <i class="fa fa-search" onclick=displayInput() aria-hidden="true"></i>
+      </button>
+  
+           <div  id="togglesearch_none">
+            <form action="{% url 'index' %}" method="GET">
+              <input type="text" placeholder="Search" aria-label="Search" name="search" value="{{index}}"/>
+             <input type="button" value="Search"/> 
+            
+            </form>
+          </div>
+      
+    </div>  -->
+      <!-- <a href="#"><i class="fa fa-search"> </i>  -->
+      
+       
+  <!--&lt;!&ndash;    </i><input type="text" size="15">-->
+   <a href="javascript:void(0);" class="menu-btn" onclick="myFunction()"> 
+        <div class="btn-line"></div>
+        <div class="btn-line"></div>
+        <div class="btn-line"></div>
+    </a>
+    </nav>
+  </header>
+
+<script src="menu.js" ></script>
+</body>
+</html>

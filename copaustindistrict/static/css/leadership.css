@@ -1,0 +1,221 @@
+h1 {
+  text-align: center;
+  padding: 20px 0 75px 0;
+}
+
+/* Tab Styling */
+.leadership-tabs {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  background-color: #005368;
+  color: rgb(208, 206, 206);
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 10px 10px 0 0;
+}
+
+.tab {
+  cursor: pointer;
+  padding: 10px;
+  border-style: inset;
+  border-width: 1px;
+  padding: 8px 40px 0 40px;
+}
+
+.tab.active {
+  background-color: #293895;
+  color: white;
+  border-style: inset;
+  border-width: 1px;
+}
+
+[data-tab-content] {
+  display: none;
+}
+
+.active[data-tab-content] {
+  display: block;
+  color: black;
+}
+
+/* Tab Content */
+.tab-content {
+  width: 57%;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  text-align: center;
+  padding-top: 30px;
+}
+
+.tab-content img {
+  cursor: pointer;
+  width: 260px;
+  height: 320px;
+  object-fit: cover;
+}
+
+.apostle {
+  font-size: 18px;
+  padding-bottom: 5px;
+}
+
+.region {
+  font-size: 16px;
+  max-width: 250px;
+}
+
+/* Tab Overlay Styling */
+#exec-hover,
+#office-zoom,
+#pbc-hover {
+  display: inline-block;
+  overflow: hidden;
+  margin: 10px;
+}
+
+/* National Execs Tab Overlay Styling */
+#exec-hover {
+  position: relative;
+  vertical-align: top;
+}
+.overlay {
+  position: absolute;
+  transition: all 0.3s ease;
+  opacity: 0;
+  background: #eee;
+}
+
+#exec-hover:hover .overlay {
+  opacity: 1;
+}
+.text {
+  color: white;
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+}
+.text h3 {
+  color: white;
+  font-weight: 600;
+}
+
+.overlay-top {
+  width: 100%;
+  height: 0;
+  bottom: 60px;
+  left: 0;
+  background-color: rgba(54, 191, 237, 0.8) !important;
+  margin: 0;
+}
+
+#exec-hover:hover .overlay-top {
+  height: 100%;
+}
+
+#exec-hover:hover .overlay-broken {
+  bottom: 81px;
+}
+/* Nat. Office Staff Overlay Styling */
+#office-zoom {
+  display: inline-block;
+  overflow: hidden !important;
+  border-bottom-style: solid;
+  border-width: 10px;
+  border-color: rgba(54, 191, 237, 0.8);
+}
+
+#office-zoom img {
+  display: block;
+  transition: 0.3s ease-in-out;
+}
+
+#office-zoom:hover img {
+  transform: scale(1.5);
+}
+
+#office-zoom:hover {
+  border-bottom-style: solid;
+  border-width: 10px;
+  border-color: #171f55;
+  transition: 0.5s ease-in-out;
+}
+
+/* PBC Staff Overlay Styling */
+.apostle-pbc {
+  font-size: 16px;
+}
+.job {
+  font-weight: 600;
+}
+
+.apostle-pbc:hover,
+.job:hover {
+  color: rgb(89, 87, 87);
+}
+
+#pbc-hover {
+  position: relative;
+}
+.overlay {
+  position: absolute;
+  transition: all 0.3s ease;
+  opacity: 0;
+  background: #eee;
+}
+#pbc-hover:hover .overlay {
+  opacity: 1;
+}
+.text-pbc {
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  text-transform: uppercase;
+}
+.text-pbc h3 {
+  color: white;
+  background-color: #005368;
+}
+
+.overlay-bottom {
+  width: 100%;
+  height: 0;
+  top: 0;
+  left: 0;
+  background-color: rgba(54, 191, 237, 0.8);
+  margin: 0;
+}
+
+#pbc-hover:hover .overlay-bottom {
+  height: 82%;
+}
+
+/* Media Queries */
+@media only screen and (max-width: 768px) {
+  .leadership-tabs {
+    flex-direction: column;
+    text-align: center;
+    width: 50%;
+  }
+
+  .tab {
+    height: auto;
+    padding: 10px;
+  }
+
+  #exec-hover.active {
+    border-radius: 20px 5px 0 0;
+  }
+  .tab-content {
+    text-align: center;
+  }
+}

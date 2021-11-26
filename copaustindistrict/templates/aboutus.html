@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+  {% load static %}
+  <head>
+    <meta charset="UTF-8">
+    <title>About Us</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">-->
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link rel="stylesheet" href="{% static 'css/index.css' %}">
+    <link rel="stylesheet" href="{% static 'css/aboutus.css' %}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/ico" href="(% static 'images/favicon.ico' %)" />
+  
+  </head>
+  
+  <body>
+  
+    <!-- Header -->
+    <header class="topnav" id="myTopnav">
+      <img class="logo" src="{% static 'images/coplogo.png' %}">
+      <h2>The Church Of Pentecost U.S.A, Inc <br>
+        Austin District</h2>
+      <nav>
+        <a href="/" class="active">Home</a>
+        <div class="dropdown">
+          <button class="dropbtn" onclick="window.location.href='';">About Us
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="leadership">Our Leadership</a>
+            <a href="tenets">Tenets &amp; Beliefs</a>
+            <a href="history">History</a>
+          </div>
+        </div>
+        <div class="dropdown">
+          <button class="dropbtn" onclick="window.location.href='ministries';">Ministries
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="childrenministry">Children&#39;s Ministry</a>
+            <a href="evangelismministry">Evangelism Ministry</a>
+            <a href="mensministry">Men&#39;s Ministry</a>
+            <a href="womensministry">Women&#39;s Ministry</a>
+            <a href="youthministry">Youth &amp; Pensa</a>
+          </div>
+        </div>
+        <div class="dropdown">
+          <button class="dropbtn" onclick="window.location.href='local';">Locals
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="https://austinpiwc.copaustin.org/">Austin PIWC</a>
+            <a href="https://killeenassembly.copaustin.org/">Killeen Assembly</a>
+            <a href="https://sanantonioassembly.copaustin.org/">San Antonio Assembly</a>
+            <a href="https://sanmarcosassembly.copaustin.org">San Marcos Assembly</a>
+          </div>
+        </div>
+        <div class="dropdown">
+          <button class="dropbtn" onclick="window.location.href='churchmedia';">Media
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="gallery">Gallery</a>
+            <a href="sermons">Sermon</a>
+            <a href="videos">Videos</a>
+          </div>
+        </div>
+  
+        <a href="contacts">Contact Us</a>
+        <a href="donate">Donate</a>
+        <!-- <form id="app" action="#">
+        <label :data-state="state" for="search">
+          <input type="text" placeholder="Search" @click="state = 'opan'" @blur="state='close'"/>
+          <i class="fa fa-search" @click="" aria-hidden="true"></i>
+        </label>
+        </form> -->
+        <!-- <div class="dropdown">
+        <button class="dropbtn">
+        
+         <i class="fa fa-search" onclick=displayInput() aria-hidden="true"></i>
+        </button>
+    
+             <div  id="togglesearch_none">
+              <form action="{% url 'index' %}" method="GET">
+                <input type="text" placeholder="Search" aria-label="Search" name="search" value="{{index}}"/>
+               <input type="button" value="Search"/> 
+              
+              </form>
+            </div>
+        
+      </div>  -->
+        <!-- <a href="#"><i class="fa fa-search"> </i>  -->
+  
+        <!--&lt;!&ndash;    </i><input type="text" size="15">-->
+        <a href="javascript:void(0);" class="menu-btn" onclick="myFunction()">
+          <div class="btn-line"></div>
+          <div class="btn-line"></div>
+          <div class="btn-line"></div>
+        </a>
+      </nav>
+    </header>
+  
+    <div class="wrapper">
+      <div id="subtitle" class="subtitle2">About Us</div>
+      <div class="innerContent">
+        <div class="w3-row">
+  
+          <div class="w3-col" style="width:860px;">
+            <div class="mb15">
+  
+              <div class="threeCol">
+                <div class="threeCol">
+                  <div class="colBox">
+                    <div class="col1">
+                      <p><span style="font-size:13px"><span style="font-family:Trebuchet MS,Helvetica,sans-serif">The Church of Pentecost, Austin District is a branch of The Church of Pentecost U.S.A., Inc., Texas Region. The Church of Pentecost U.S.A., Inc. is the U.S.A. branch of The Church of Pentecost International which is a worldwide multi-cultural dynamic Christian group with its general headquarters in Accra, Ghana.</span></span></p>
+  
+                      <p><span style="font-size:13px"><span style="font-family:Trebuchet MS,Helvetica,sans-serif">It traces its origin to 1937 when the Irish Missionary, Rev. James McKeown, began his ministry in the then Gold Coast (now Ghana). It is a full-gospel, Holy Spirit-filled Church carrying the gospel of Jesus Christ to all parts of the world.</span></span></p>
+  
+                      <p><span style="font-size:13px"><span style="font-family:Trebuchet MS,Helvetica,sans-serif">The vision of the Church is to bring the world to the saving knowledge of Jesus Christ. The Church lays strong emphasis on the Word of God, holiness, prayer and evangelism. It provides leadership and discipleship to the believer to have a loving personal relationship with Jesus Christ and people. It empowers the believer to be spiritually, emotionally and physically stable and matured and to have a deeper meaning to life here on earth and hereafter&nbsp;in heaven as we await the Second Coming of our Lord and Savior Jesus Christ.</span></span></p>
+                    </div>
+                  </div>
+  
+                  <div class="colBox">
+                    <div class="col2">
+                      <p><span style="font-size:13px"><span style="font-family:Trebuchet MS,Helvetica,sans-serif">It is our fervent believe that God can use all those who believe in Christ to achieve great things in the Kingdom of God through the power of the Holy Spirit. In this way, members are trained and encouraged to use all their spiritual gifts, talents and skills to the glory of God with each member being a vital part of the Body of Christ. It is the goal of the Church that members will have assemblies (branches) closer to them to ensure regular participation in church activities and enhance a kind of fellowship where everyone is known, loved and well cared for. In view of this, the Church is organized at different levels namely: International, National, Regional (Area), District and Local levels.</span></span></p>
+  
+                      <p><span style="font-size:13px"><span style="font-family:Trebuchet MS,Helvetica,sans-serif">In the U.S.A., Austin District is in the&nbsp;Texas Region. Austin&nbsp;District currently has a total of four (4)&nbsp;assemblies namely:</span></span></p>
+  
+                      <p><span style="font-size:13px"><span style="font-family:Trebuchet MS,Helvetica,sans-serif">- Austin PIWC and Twi&nbsp; Assembly<br>
+                            - San Antonio Assembly&nbsp;<br>
+                            - San Marcos PIWC<br>
+  
+                            - Killeen Assembly.&nbsp;
+                          </span></span></p>
+                    </div>
+                  </div>
+  
+                  <div class="colBox">
+                    <div class="col3">
+                      <p><span style="font-size:13px"><span style="font-family:Trebuchet MS,Helvetica,sans-serif">Joint services are occasionally organized.</span></span></p>
+  
+                      <p><span style="font-size:13px"><span style="font-family:Trebuchet MS,Helvetica,sans-serif">Currently, The Church of Pentecost International is active in 109&nbsp;countries across the continents.</span></span></p>
+  
+                      <p><span style="font-size:13px"><span style="font-family:Trebuchet MS,Helvetica,sans-serif">In the U.S.A., the church membership is over 31,893 with 254 local assemblies across the States (COP USA National Report&nbsp;2019).</span></span></p>
+  
+                      <p><span style="font-size:13px"><span style="font-family:Trebuchet MS,Helvetica,sans-serif">The International Chairman of the Church is Apostle Eric Kwabena Nyamekye. The National Head for the U.S.A. is Apostle Michael Agyemang-Amoako and the Regional (Area) Head is APostle Samuel Akwesi Arthur. The District Pastor is Ovr. Gerald Hagan. The District has four Presiding Elders who oversees the various assemblies with the support of the local Presbytery. The District Pastor who is the Head of all the assemblies in the District, visits the Assembly regularly.</span></span></p>
+                    </div>
+                  </div>
+  
+                  <div class="colClear">&nbsp;</div>
+                </div>
+  
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+      <table style="width:100%;" class="celPad">
+        <tbody>
+          <tr>
+            <th style="width:100px;"></th>
+            <th></th>
+          </tr>
+                <tr class="oddRow">
+            <td class="centerMiddle"><a href="leadership"><span class="fas fa-file-alt fa-3x fa-fw" aria-hidden="true"></span></a></td>
+            <td class="middle"><a href="leadership">
+                <h3 class="mt10">Our Leadership</h3>
+              </a></td>
+          </tr>
+         
+          <tr>
+            <td class="centerMiddle"><a href="tenets"><span class="fas fa-file-alt fa-3x fa-fw" aria-hidden="true"></span></a></td>
+            <td class="middle"><a href="tenets">
+                <h3 class="mt10">Tenets &amp; Beliefs</h3>
+              </a></td>
+          </tr>
+    
+          <tr class="oddRow">
+            <td class="centerMiddle"><a href="history"><span class="fas fa-file-alt fa-3x fa-fw" aria-hidden="true"></span></a></td>
+            <td class="middle"><a href="history">
+                <h3 class="mt10">History</h3>
+              </a></td>
+          </tr>
+        </tbody>
+      </table>
+  
+    </div>
+  
+    <!--End Main Content -->
+  
+    <!-- Footer -->
+    <footer>
+      <div id="container">
+  
+        <!-- Resources -->
+        <div class="resources">
+          <h3>Resources</h3>
+          <div class="line"></div>
+          <ul>
+            <li>
+              <i class="fas fa-caret-right"></i>
+              <a href="biblestudies">Bible Studies</a>
+            </li>
+            <li>
+              <i class="fas fa-caret-right"></i>
+              <a href="books">Books</a>
+            </li>
+            <li>
+              <i class="fas fa-caret-right"></i>
+              <a href="pentecostsongs">Pentecost Songs</a>
+            </li>
+          </ul>
+        </div>
+  
+        <!-- Quick Links -->
+        <div class="quick-links">
+          <h3>External Links</h3>
+          <div class="line"></div>
+          <ul>
+            <li>
+              <i class="fas fa-caret-right"></i>
+              <a href="https://thecophq.org/">International HQ</a>
+            </li>
+            <li>
+              <i class="fas fa-caret-right"></i>
+              <a href="https://www.copusa.org/">National HQ</a>
+            </li>
+            <li>
+              <i class="fas fa-caret-right"></i>
+              <a href="https://www.copusa.org/texas-region/">Texas Region</a>
+            </li>
+            <li>
+              <i class="fas fa-caret-right"></i>
+              <a href="https://business.facebook.com/Church-of-Pentecost-Austin-District-Outreach-and-Discipleship-wing-104092241275458/">Outreach</a>
+            </li>
+          </ul>
+        </div>
+  
+        <!-- About Us -->
+        <div class="about-us">
+          <h3>About Us</h3>
+          <div class="line"></div>
+          <p>The Church of Pentecost U.S.A Inc., Austin District, is a non-profit-making Pentecostal church with its district seat in
+            Austin, Texas.
+          </p>
+  
+          <!-- <a href="">Send Us a Message</a> -->
+          <button onclick="window.location.href = 'contacts';">Send Us a Message</button>
+        </div>
+      </div>
+      <hr>
+      <section class="bottom">
+        <p>Copyright &copy; 2021 The Church of Pentecost U.S.A. Inc., Austin District. </p>
+        <a href="websitebuilders">Website Builders</a>
+        <a href="admin/" target="_blank" rel="noopener noreferrer">Site Admin</a>
+        <ul>
+          <li>
+            <a href="https://business.facebook.com/Church-of-Pentecost-Austin-District-Outreach-and-Discipleship-wing-104092241275458/"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.copaustin.org/"><i class="fas fa-caret-right"></i></a>
+            <a href="#"><i class="fas fa-chevron-up"></i></a>
+          </li>
+        </ul>
+      </section>
+    </footer>
+    <script src="{% static 'css/menu.js' %}"></script>
+    <script src="{% static 'css/slideshow.js' %}"></script>
+  
+  </body>
+  
+  </html>

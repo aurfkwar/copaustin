@@ -1,0 +1,82 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  {% load static %}
+<head>
+    <meta charset="UTF-8">
+    <title>COP Austin District</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="{% static 'css/menustyle.css' %}">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/ico" href="(% static 'images/favicon.ico' %)" />
+
+</head>
+<body>
+<header class="topnav" id="myTopnav">
+  <img class="logo" src="{% static 'images/coplogo.png' %}">
+  <h2>The Church Of Pentecost U.S.A, Inc <br>
+    Austin District</h2>
+  <nav>
+  <a href="#home" class="active">Home</a>
+  <div class="dropdown">
+    <button class="dropbtn">About Us
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="#">Our Leadership</a>
+      <a href="#">Tenets &amp; Beliefs</a>
+      <a href="#">History</a>
+    </div>
+  </div>
+  <div class="dropdown">
+    <button class="dropbtn">Ministries
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="#">Children&#39;s Ministry</a>
+      <a href="#">Evangelism Ministry</a>
+      <a href="#">Men&#39;s Ministry</a>
+      <a href="#">Women&#39;s Ministry</a>
+      <a href="#">Youth &amp; Pensa</a>
+    </div>
+  </div>
+  <div class="dropdown">
+    <button class="dropbtn">Locals
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="https://austinpiwc.copaustin.org/">Austin PIWC</a>
+      <a href="https://killeenassembly.copaustin.org/" >Killeen Assembly</a>
+      <a href="https://sanantonioassembly.copaustin.org/" >San Antonio Assembly</a>
+      <a href="https://sanmarcosassembly.copaustin.org" >San Marcos Assembly</a>
+    </div>
+  </div>
+  <div class="dropdown">
+    <button class="dropbtn" onclick="window.location.href='media.html';">Media
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="#">Gallery</a>
+      <a href="#">Sermon</a>
+      <a href="#">Videos</a>
+    </div>
+  </div>
+
+  <a href="#">Contact Us</a>
+  <a href="#">Donate</a>
+    <a href="#"><i class="fa fa-search"> </i>
+<!--&lt;!&ndash;    </i><input type="text" size="15">--></a>
+  <a href="javascript:void(0);" class="menu-btn" onclick="myFunction()">
+      <div class="btn-line"></div>
+      <div class="btn-line"></div>
+      <div class="btn-line"></div>
+  </a>
+  </nav>
+</header>
+
+<script src="{% static 'css/menu.js' %}" ></script>
+</body>
+</html>

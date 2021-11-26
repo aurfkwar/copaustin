@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+    {% load static %}
+
+<head>
+    <meta charset="UTF-8">
+    <title>Website Builders and Credits</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link rel="stylesheet" href="{% static 'css/index.css' %}">
+    <link rel="stylesheet" href="{% static 'css/websitebuilders.css' %}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/ico" href="(% static 'images/favicon.ico' %)" />
+
+</head>
+
+<body>
+    <header class="topnav" id="myTopnav">
+        <img class="logo" src="{% static 'images/coplogo.png' %}">
+        <h2>The Church Of Pentecost U.S.A, Inc <br>
+            Austin District</h2>
+        <nav>
+            <a href="index" class="active">Home</a>
+            <div class="dropdown">
+                <button class="dropbtn">About Us
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <a href="leadership">Our Leadership</a>
+                    <a href="tenets">Tenets &amp; Beliefs</a>
+                    <a href="history">History</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn">Ministries
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <a href="childrenministry">Children&#39;s Ministry</a>
+                    <a href="evangelismministry">Evangelism Ministry</a>
+                    <a href="mensministry">Men&#39;s Ministry</a>
+                    <a href="womensministry">Women&#39;s Ministry</a>
+                    <a href="youthministry">Youth &amp; Pensa</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn">Locals
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <a href="https://austinpiwc.copaustin.org/">Austin PIWC</a>
+                    <a href="https://killeenassembly.copaustin.org/">Killeen Assembly</a>
+                    <a href="https://sanantonioassembly.copaustin.org/">San Antonio Assembly</a>
+                    <a href="https://sanmarcosassembly.copaustin.org">San Marcos Assembly</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn" onclick="window.location.href='media.html';">Media
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <a href="gallery">Gallery</a>
+                    <a href="sermons">Sermon</a>
+                    <a href="videos">Videos</a>
+                </div>
+            </div>
+            <a href="contact">Contact Us</a>
+            <a href="donate">Donate</a>
+            <a href="#"><i class="fa fa-search"></i></a>
+            <a href="javascript:void(0);" class="menu-btn" onclick="myFunction()">
+                <div class="btn-line"></div>
+                <div class="btn-line"></div>
+                <div class="btn-line"></div>
+            </a>
+        </nav>
+    </header>
+
+    <!-- End Header -->
+
+    <main>
+
+        <div class="banner">
+            <img class="banner" src="{% static 'images/websitebuildersimg/samplebanner.png' %}" alt="website builders banner">
+        </div>
+
+
+
+        <div class="thanks">
+            <h1>Thank You To The Frontend Developers</h1>
+        </div>
+
+
+
+        <div id="developers">
+
+
+            <div id="raynell">
+                <div class="raynellpic"> <img src="{% static 'images/websitebuildersimg/Raynell3.png' %}" alt="Raynell Carmichael pic">
+                </div>
+
+                <div class="names">Raynell Carmichael</div>
+                <div>
+
+                    <a href="https://www.linkedin.com/in/raynelljcarmichael/" target="_blank"
+                        rel="noopener noreferrer"><button class="linkedinbutton">LinkedIn</button></a>
+                </div>
+                <div>
+
+                    <a href="https://github.com/RaynellJamal/RaynellJamal" target="_blank" rel="noopener noreferrer">
+                        <button class="gitbutton">GitHub</button></a>
+                </div>
+
+
+
+            </div>
+
+            <div id="amy">
+                <div><img src="{% static 'images/websitebuildersimg/AmyFunderburg2.png' %}" class="amypic" alt="Amy Funferburg pic">
+                </div>
+                <div class="names">
+                    Amy Funderburg
+                </div>
+                <div>
+                    <a href="https://www.linkedin.com/in/amyfunderburg/" target="_blank" rel="noopener noreferrer">
+                        <button class="linkedinbutton">LinkedIn</button></a>
+                </div>
+                <div>
+                    <a href="https://github.com/beloved" target="_blank" rel="noopener noreferrer"><button
+                            class="gitbutton">GitHub</button></a>
+                </div>
+
+
+            </div>
+
+
+
+            <div id="rosemarie">
+                <div><img src="{% static 'images/websitebuildersimg/RosemarieSeus.jpg' %}" alt="Rosemarie Seus pic"></div>
+                <div class="names">Rosemarie Seus</div>
+                <div>
+                    <a href="https://www.linkedin.com/in/rosemarie-seus/" target="_blank"
+                        rel="noopener noreferrer"><button class="linkedinbutton">LinkedIn</button></a>
+                </div>
+                <div>
+                    <a href="https://github.com/bluerose77" target="_blank" rel="noopener noreferrer"><button
+                            class="gitbutton">GitHub</button></a>
+                </div>
+
+
+            </div>
+            <div id="sasha">
+                <div><img src="{% static 'images/websitebuildersimg/sashaThomas.png' %}" alt="Sasha Thomas pic"></div>
+
+                <div class="names">Sasha Thomas</div>
+                <div>
+                    <a href="https://www.linkedin.com/in/sasha-thomas-084607224/" target="_blank"
+                        rel="noopener noreferrer"><button class="linkedinbutton">LinkedIn</button></a>
+                </div>
+                <div>
+                    <a href="https://github.com/sctredws" target="_blank" rel="noopener noreferrer"><button
+                            class="gitbutton">GitHub</button></a>
+                </div>
+            </div>
+
+
+        </div>
+
+
+        <br>
+        <br>
+        <br>
+
+
+        <div class="credits">
+
+            <p>Thank You to the <a href="https://reskillamericans.org/" target="_blank"
+                    rel="noopener noreferrer">Reskill Americans</a> program for training
+                in
+                website design and building.
+            </p>
+
+
+            <br>
+            <br>
+
+
+            <p> Credit to <a href="https://www.copusa.org/" target="_blank" rel="noopener noreferrer"> The Church of
+                    Pentecost U.S.A. Inc. </a> The website
+                design was inspired by their site. </p>
+
+        </div>
+
+
+
+
+
+    </main>
+
+
+
+    <!-- Begin Footer -->
+    <footer>
+        <div id="container">
+          <!-- Top Categories-->
+          <div class="categories">
+            <h3>Top categories</h3>
+            <div class="line"></div>
+            <ul>
+              <li>
+                  <i class="fas fa-caret-right"></i>
+                  <a href="">Ministries</a>
+              </li>
+              <li>
+                  <i class="fas fa-caret-right"></i>
+                  <a href="">Locals</a>
+              </li>
+              <li>
+                  <i class="fas fa-caret-right"></i>
+                  <a href="">PentMedia</a>
+              </li>
+              <li>
+                  <i class="fas fa-caret-right"></i>
+                  <a href="">Articles</a>
+              </li>
+              <li>
+                  <i class="fas fa-caret-right"></i>
+                  <a href="">Top News</a>
+              </li>
+          </ul>
+          </div>
+      
+          <!-- Resources -->
+          <div class="resources">
+            <h3>Resources</h3>
+            <div class="line"></div>
+            <ul>
+              <li>
+                <i class="fas fa-caret-right"></i>
+                <a href="">Bible Studies</a>
+              </li>
+              <li>
+                <i class="fas fa-caret-right"></i>
+                <a href="">Books</a>
+              </li>
+              <li>
+                <i class="fas fa-caret-right"></i>
+                <a href="">Pentecost Songs</a>
+              </li>
+              <li>
+                <i class="fas fa-caret-right"></i>
+                <a href="">Report/Updates</a>
+              </li>
+              <li>
+                <i class="fas fa-caret-right"></i>
+                <a href="">Leadership</a>
+              </li>
+            </ul>
+          </div>
+      
+          <!-- Quick Links -->
+          <div class="quick-links">
+            <h3>Quick Links</h3>
+            <div class="line"></div>
+            <ul>
+              <li>
+                  <i class="fas fa-caret-right"></i>
+                  <a href="#">International HQ</a>
+              </li>
+              <li>
+                  <i class="fas fa-caret-right"></i>
+                  <a href="#">National HQ</a>
+              </li>
+              <li>
+                  <i class="fas fa-caret-right"></i>
+                  <a href="#">Texas Region</a>
+              </li>
+              <li>
+                  <i class="fas fa-caret-right"></i>
+                  <a href="#">Youth & PENSA</a>
+              </li>
+              <li>
+                  <i class="fas fa-caret-right"></i>
+                  <a href="#">Outreach</a>
+              </li>
+          </ul>
+          </div>
+      
+          <!-- About Us -->
+          <div class="about-us">
+            <h3>About Us</h3>
+            <div class="line"></div>
+            <p>The Church of Pentecost U.S.A Inc., Austin District, is a non-profit-making Pentecostal church with its district seat in
+              Austin, Texas.
+            </p>
+      
+            <!-- <a href="">Send Us a Message</a> -->
+            <button onclick="window.location.href = 'contact';">Send Us a Message</button>
+          </div>
+        </div>
+        <hr>
+        <section class="bottom">
+          <p>Copyright &copy; 2021 The Church of Pentecost U.S.A. Inc., Austin District. </p>
+          <a href="">Website Builders</a>
+          <ul>
+            <li>
+              <a href="https://business.facebook.com/Church-of-Pentecost-Austin-District-Outreach-and-Discipleship-wing-104092241275458/"><i class="fab fa-facebook-f"></i></a>
+              <a href="https://www.copaustin.org/"><i class="fas fa-caret-right"></i></a>
+              <a href="#"><i class="fas fa-chevron-up"></i></a>
+            </li>
+          </ul>
+        </section>
+      </footer>
+      <script src="{% static 'css/menu.js' %}" ></script>
+    <!-- <script src="slideshow.js"></script> -->
+</body>
+
+</html>
